@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Taumas</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  <style>
+
+    .navbar {
+      margin-bottom: 50px;
+      border-radius: 0;
+    }
+    
+     .jumbotron {
+      margin-bottom: 0;
+    }
+   
+    footer {
+      background-color: #f2f2f2;
+      padding: 25px;
+    }
+
+    button {
+      margin-left: 450px;
+      margin-bottom: 8px;
+    }
+
+  </style>
+  
+</head>
+<body>
+
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+        </button>
+        <a class="navbar-brand" href="../index.html">TT ∞ Cars</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="../index.html">Home</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#"><span class="glyphicon glyphicon-user"></span> Your Account</a></li>
+          <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <article>
+    <div class="container">
+      <div class="col-4" id="form">
+        <form name="form" id="formSpe">
+          <!-- div.row*2>div.col-6*2>div.form-group>label+br+input.form-control -->
+          <div class="row">
+            <div class="col-6">
+              <div class="form-group">
+                <label for="modele">MODÈLE :</label>
+                <br>
+                <li for="name">Nom :</li>
+                <br>
+                <input type="text" class="form-control" id="name">
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="form-group">
+                <li for="marque">Marque :</li>
+                <br>
+                <input type="text" class="form-control" id="marque">
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-6">
+              <div class="form-group">
+                <li for="prixJournee">Prix Journée :</li>
+                <br>
+                <input type="text" class="form-control" id="prixJournee">
+                <br>
+                <label for="name">---</label>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="form-group">
+                <label for="vehicule">VÉHICULE :</label>
+                <br>
+                <li for="immatriculation">Immatriculation :</li>
+                <br>
+                <input type="text" class="form-control" id="immatriculation">
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="form-group">
+                <li for="dateMiseEnService">Date mise en service :</li>
+                <br>
+                <input type="text" class="form-control" id="dateMiseEnService">
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="form-group">
+                <li for="kilometrage">Kilometrage :</li>
+                <br>
+                <input type="text" class="form-control" id="kilometrage">
+                <br>
+                <label for="traits">---</label>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="form-group">
+                <label for="reservation">RÉSERVATION :</label>
+                <br>
+                <li for="numeroReservation">Numéro Réservation :</li>
+                <br>
+                <input type="text" class="form-control" id="numeroReservation">
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="form-group">
+                <li for="dateDeDebut">Date Début :</li>
+                <br>
+                <input type="text" class="form-control" id="dateDeDebut">
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="form-group">
+                <li for="dateDeFin">Date Fin :</li>
+                <br>
+                <input type="text" class="form-control" id="dateDeFin">
+              </div>
+            </div>
+
+          </div>
+
+        </form>
+        <div class="validation">
+          <button class="btn-primary" id="valid">Valider</button>
+        </div>
+      </div>
+    </div>
+  </article>
+  <script src="../assets/js/listscar.js"></script>
+</body>
+</html>

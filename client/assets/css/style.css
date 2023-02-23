@@ -1,0 +1,24 @@
+.container {
+  margin-top: 50px;
+}
+
+
+#form {
+  border-left: 1px solid #9c9494;
+}
+
+
+.validation {
+  text-align: center;
+}
+
+#corps {
+  width: 950px;
+  margin: 50px auto;
+  background-color: rgba(90, 86, 86, 0.219);
+  padding: 20px;
+}
+
+td img {
+  width: 20px;
+}

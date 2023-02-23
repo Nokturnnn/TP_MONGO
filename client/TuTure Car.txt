@@ -1,0 +1,47 @@
+TuTure Car :
+
+- Modèle Véhicule —— [ String ]
+- Voiture manuelle / électrique —— [ Oui / Non ]
+- Assurance Accident —— [ Oui / Non ]
+- Assurance Annulation —— [ Oui / Non ]
+- Numéro De Réservation —— [ String ]
+- Permis De Conduire —— [ Oui / Non ]
+- Nom —— [ String ]
+- Prénom ——[ String ]
+- Adresse —— [ String ]
+- Caution —— [ Integer ] ∞ [ Price ]
+
+
+    <div class="container">
+      <div class="row">
+        <div class="col-8">
+          <table class="table table-sm table-bordered table-striped">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Marque</th>
+                <th>Prix</th>
+                <th>Imma</th>
+                <th>Date de mise en service</th>
+                <th>Kilometrage</th>
+                <th>numero de reservation</th>
+                <th>Date de début</th>
+                <th>Date de fin</th>
+              </tr>
+            </thead>
+            <tbody id="movies">
+
+            </tbody>
+          </table>
+        </div>
+
+
+            nom: name.value,
+    marque: marque.value,
+    prixJournee: prixJournee.value,
+    immatriculation: immatriculation.value,
+    dateMiseEnService: dateMiseEnService.value,
+    kilometrage: kilometrage.value,
+    numeroReservation: numeroReservation.value,
+    dateDeDebut: dateDeDebut.value,
+    dateDeFin: dateDeFin.value
