@@ -28,7 +28,7 @@ function addCar()
 
   let options = 
   {
-    method: 'POST', // SEND
+    method: 'POST', // SEND INFORMATIONS
     headers: {
       'Accept': 'application/json',
       'Content-Type': 'application/json'
@@ -49,6 +49,16 @@ function addCar()
     }
   });
 }
+
+//
+function getAllCarNames(response) {
+  let carNames = [];
+  response.forEach(car => {
+    carNames.push(car.nom);
+  });
+  return carNames;
+}
+//
 
 function deleteCar(id) 
 {
@@ -132,6 +142,10 @@ fetch(url, options)
 {
   response.forEach(elt => 
     {
-    addOneLine(elt);
-  });
+      addOneLine(elt);
+    });
+  const allCarNames = getAllCarNames(response);
+  if (allCarNames.length > 0) {
+    localStorage.setItem('carNames', JSON.stringify(allCarNames));
+  }
 })

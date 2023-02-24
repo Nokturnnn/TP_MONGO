@@ -33,7 +33,7 @@
 
 <div class="jumbotron">
   <div class="container text-center">
-    <h1>TuTure's Cars</h1>      
+    <h1>LES BAGNOLES</h1>      
     <p>At Your service !</p>
   </div>
 </div>
@@ -71,7 +71,7 @@
         <!-- Intégrer le nom de la première saisie qui est issue de la BDD -->
         <div class="panel-footer text-center" >
           <!-- Here ! -->
-	        <div>Car : <span id="carName"></span></div>
+	        <div><span id="carName1"></span></div>
         </div>
       </div>
     </div>
@@ -79,14 +79,18 @@
       <div class="panel panel-danger">
         <div class="panel-heading text-center">Cars N°2</div>
         <div class="panel-body"><img src="https://img.phonandroid.com/2022/10/BMW-iX-8.jpg" class="img-responsive" style="width:100%" alt="Image"></div>
-        <div class="panel-footer text-center">BluBlu</div>
+        <div class="panel-footer text-center">
+          <div><span id="carName2"></span></div>
+        </div>
       </div>
     </div>
     <div class="col-sm-4"> 
       <div class="panel panel-success">
         <div class="panel-heading text-center">Cars N°3</div>
         <div class="panel-body"><img src="https://www.automobile-magazine.fr/asset/cms/169797/config/118608/la-future-audi-a3-sera-la-grande-nouveaute-de-lannee-2020-pour-la-marque.jpg" class="img-responsive" style="width:100%" alt="Image"></div>
-        <div class="panel-footer text-center">BluBlu</div>
+        <div class="panel-footer text-center">
+          <div><span id="carName3"></span></div>
+        </div>
       </div>
     </div>
   </div>
@@ -98,21 +102,27 @@
       <div class="panel panel-primary">
         <div class="panel-heading text-center">Cars N°4</div>
         <div class="panel-body"><img src="https://staticeu-h2.izmocars.com/toolkit/commonassets/2022/22kia/22kiasportagepuresu5b/22kiasportagepuresu5b_pixGallery/_gallerypix/kia_sportagepuresu5b_angularfront.jpg" class="img-responsive" style="width:100%" alt="Image"></div>
-        <div class="panel-footer text-center">BluBlu</div>
+        <div class="panel-footer text-center">
+          <div><span id="carName4"></span></div>
+        </div>
       </div>
     </div>
     <div class="col-sm-4">
       <div class="panel panel-danger">
         <div class="panel-heading text-center">Cars N°5</div>
         <div class="panel-body"><img src="https://i.gaw.to/content/photos/35/08/350812_Une_compagnie_lance_un_ensemble_electrique_pour_des_voitures_Porsche.jpg" class="img-responsive" style="width:100%" alt="Image"></div>
-        <div class="panel-footer text-center">BluBlu</div>
+        <div class="panel-footer text-center">
+          <div><span id="carName5"></span></div>
+        </div>
       </div>
     </div>
     <div class="col-sm-4"> 
       <div class="panel panel-success">
         <div class="panel-heading text-center">Cars N°6</div>
         <div class="panel-body"><img src="https://www.voiture-autonome.net/wp-content/uploads/2015/11/mercedes-voiture-autonome.jpg" class="img-responsive" style="width:100%" alt="Image"></div>
-        <div class="panel-footer text-center">BluBlu</div>
+        <div class="panel-footer text-center">
+          <div><span id="carName6"></span></div>
+        </div>
       </div>
     </div>
   </div>
@@ -127,8 +137,33 @@
 </footer>
 
 <script>
-  var carName = localStorage.getItem('carName');
-  document.getElementById('carName').innerHTML = carName;
+
+document.addEventListener('DOMContentLoaded', () => {
+  const carNamesElement1 = document.querySelector('#carName1');
+  const carNamesElement2 = document.querySelector('#carName2');
+  const carNamesElement3 = document.querySelector('#carName3');
+  const carNamesElement4 = document.querySelector('#carName4');
+  const carNamesElement5 = document.querySelector('#carName5');
+  const carNamesElement6 = document.querySelector('#carName6');
+  const carNamesElement7 = document.querySelector('#carName7');
+  const carNamesElement8 = document.querySelector('#carName8');
+  const carNamesElement9 = document.querySelector('#carName9');
+  const carNamesElement10 = document.querySelector('#carName10');
+  const carNames = JSON.parse(localStorage.getItem('carNames'));
+  if (carNames && carNames.length >= 2) {
+    carNamesElement1.innerText = carNames[0];
+    carNamesElement2.innerText = carNames[1];
+    carNamesElement3.innerText = carNames[2];
+    carNamesElement4.innerText = carNames[3];
+    carNamesElement5.innerText = carNames[4];
+    carNamesElement6.innerText = carNames[5];
+    carNamesElement7.innerText = carNames[6];
+    carNamesElement8.innerText = carNames[7];
+    carNamesElement9.innerText = carNames[8];
+    carNamesElement10.innerText = carNames[9];
+  }
+});
+
 </script>
 
 </body>
