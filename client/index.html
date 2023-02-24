@@ -33,7 +33,7 @@
 
 <div class="jumbotron">
   <div class="container text-center">
-    <h1>LES BAGNOLES</h1>      
+    <h1>LES BAGNOLOC_</h1>      
     <p>At Your service !</p>
   </div>
 </div>
@@ -70,8 +70,9 @@
         <div class="panel-body"><img src="https://img-4.linternaute.com/JLKw5PYU8I_JP9POLIQAqBdhLMg=/1500x/smart/fac6d59eb91a44e886947968af8ecb2e/ccmcms-linternaute/21413766.jpg" class="img-responsive" style="width:100%" alt="Image"></div>
         <!-- Intégrer le nom de la première saisie qui est issue de la BDD -->
         <div class="panel-footer text-center" >
-          <!-- Here ! -->
+          <!-- Ici ! -->
 	        <div><span id="carName1"></span></div>
+          <div><span id="carPrice1"></span> / jour</div>
         </div>
       </div>
     </div>
@@ -81,6 +82,7 @@
         <div class="panel-body"><img src="https://img.phonandroid.com/2022/10/BMW-iX-8.jpg" class="img-responsive" style="width:100%" alt="Image"></div>
         <div class="panel-footer text-center">
           <div><span id="carName2"></span></div>
+          <div><span id="carPrice2"></span> / jour</div>
         </div>
       </div>
     </div>
@@ -90,6 +92,7 @@
         <div class="panel-body"><img src="https://www.automobile-magazine.fr/asset/cms/169797/config/118608/la-future-audi-a3-sera-la-grande-nouveaute-de-lannee-2020-pour-la-marque.jpg" class="img-responsive" style="width:100%" alt="Image"></div>
         <div class="panel-footer text-center">
           <div><span id="carName3"></span></div>
+          <div><span id="carPrice3"></span> / jour</div>
         </div>
       </div>
     </div>
@@ -104,6 +107,7 @@
         <div class="panel-body"><img src="https://staticeu-h2.izmocars.com/toolkit/commonassets/2022/22kia/22kiasportagepuresu5b/22kiasportagepuresu5b_pixGallery/_gallerypix/kia_sportagepuresu5b_angularfront.jpg" class="img-responsive" style="width:100%" alt="Image"></div>
         <div class="panel-footer text-center">
           <div><span id="carName4"></span></div>
+          <div><span id="carPrice4"></span> / jour</div>
         </div>
       </div>
     </div>
@@ -113,6 +117,7 @@
         <div class="panel-body"><img src="https://i.gaw.to/content/photos/35/08/350812_Une_compagnie_lance_un_ensemble_electrique_pour_des_voitures_Porsche.jpg" class="img-responsive" style="width:100%" alt="Image"></div>
         <div class="panel-footer text-center">
           <div><span id="carName5"></span></div>
+          <div><span id="carPrice5"></span> / jour</div>
         </div>
       </div>
     </div>
@@ -122,6 +127,7 @@
         <div class="panel-body"><img src="https://www.voiture-autonome.net/wp-content/uploads/2015/11/mercedes-voiture-autonome.jpg" class="img-responsive" style="width:100%" alt="Image"></div>
         <div class="panel-footer text-center">
           <div><span id="carName6"></span></div>
+          <div><span id="carPrice6"></span> / jour</div>
         </div>
       </div>
     </div>
@@ -138,7 +144,8 @@
 
 <script>
 
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', () => 
+{
   const carNamesElement1 = document.querySelector('#carName1');
   const carNamesElement2 = document.querySelector('#carName2');
   const carNamesElement3 = document.querySelector('#carName3');
@@ -149,19 +156,46 @@ document.addEventListener('DOMContentLoaded', () => {
   const carNamesElement8 = document.querySelector('#carName8');
   const carNamesElement9 = document.querySelector('#carName9');
   const carNamesElement10 = document.querySelector('#carName10');
+  
+  const carPricesElement1 = document.querySelector('#carPrice1');
+  const carPricesElement2 = document.querySelector('#carPrice2');
+  const carPricesElement3 = document.querySelector('#carPrice3');
+  const carPricesElement4 = document.querySelector('#carPrice4');
+  const carPricesElement5 = document.querySelector('#carPrice5');
+  const carPricesElement6 = document.querySelector('#carPrice6');
+  const carPricesElement7 = document.querySelector('#carPrice7');
+  const carPricesElement8 = document.querySelector('#carPrice8');
+  const carPricesElement9 = document.querySelector('#carPrice9');
+  const carPricesElement10 = document.querySelector('#carPrice10');
+
   const carNames = JSON.parse(localStorage.getItem('carNames'));
-  if (carNames && carNames.length >= 2) {
+  const carPrices = JSON.parse(localStorage.getItem('carPrices'));
+
+  if (carNames && carNames.length >= 2 && carPrices && carPrices.length >= 2) 
+
+  {
     carNamesElement1.innerText = carNames[0];
+    carPricesElement1.innerText = carPrices[0];
     carNamesElement2.innerText = carNames[1];
+    carPricesElement2.innerText = carPrices[1];
     carNamesElement3.innerText = carNames[2];
+    carPricesElement3.innerText = carPrices[2];
     carNamesElement4.innerText = carNames[3];
+    carPricesElement4.innerText = carPrices[3];
     carNamesElement5.innerText = carNames[4];
+    carPricesElement5.innerText = carPrices[4];
     carNamesElement6.innerText = carNames[5];
+    carPricesElement6.innerText = carPrices[5];
     carNamesElement7.innerText = carNames[6];
+    carPricesElement7.innerText = carPrices[6];
     carNamesElement8.innerText = carNames[7];
+    carPricesElement8.innerText = carPrices[7];
     carNamesElement9.innerText = carNames[8];
+    carPricesElement9.innerText = carPrices[8];
     carNamesElement10.innerText = carNames[9];
+    carPricesElement10.innerText = carPrices[9];
   }
+
 });
 
 </script>

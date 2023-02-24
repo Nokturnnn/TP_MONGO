@@ -1,0 +1,110 @@
+{
+    "marque" : "Peugeot 208",
+    "prixJournee" : "40 €",
+    "immatriculation" : "RB-221-WB",
+    "dateMiseEnService" : "2014",
+    "kilometrage" : "15 000 Km",
+    "numeroReservation" : "85KZ",
+    "dateDeDebut" : "10/10/2023",
+    "dateDeFin" : "10/11/2024"
+}
+{
+    "marque" : "BMW X5",
+    "prixJournee" : "50 €",
+    "immatriculation" : "HB-872-OI",
+    "dateMiseEnService" : "2014",
+    "kilometrage" : "15 000 Km",
+    "numeroReservation" : "85KZ",
+    "dateDeDebut" : "10/10/2023",
+    "dateDeFin" : "10/11/2024"
+}
+{
+    "marque" : "Audi A3",
+    "prixJournee" : "45€",
+    "immatriculation" : "QC-229-BC",
+    "dateMiseEnService" : "2012",
+    "kilometrage" : "11 000 Km",
+    "numeroReservation" : "77BT",
+    "dateDeDebut" : "04/01/2023",
+    "dateDeFin" : "04/02/2024"
+}
+{
+    "marque" : "Kia",
+    "prixJournee" : "30€",
+    "immatriculation" : "LC-332-BC",
+    "dateMiseEnService" : "2016",
+    "kilometrage" : "10 000 Km",
+    "numeroReservation" : "66JK",
+    "dateDeDebut" : "27/11/2023",
+    "dateDeFin" : "27/11/2024"
+}
+{
+    "marque" : "Porshe",
+    "prixJournee" : "60€",
+    "immatriculation" : "VC-154-ZA",
+    "dateMiseEnService" : "2022",
+    "kilometrage" : "10 000 Km",
+    "numeroReservation" : "99FG",
+    "dateDeDebut" : "01/02/2023",
+    "dateDeFin" : "01/03/2024"
+}
+{
+    "marque" : "Mercedes",
+    "prixJournee" : "55€",
+    "immatriculation" : "EC-984-TY",
+    "dateMiseEnService" : "2020",
+    "kilometrage" : "14 100 Km",
+    "numeroReservation" : "11JD",
+    "dateDeDebut" : "25/06/2023",
+    "dateDeFin" : "25/07/2024"
+}
+{
+    "marque" : "Citroën C3",
+    "prixJournee" : "25€",
+    "immatriculation" : "KJ-921-OP",
+    "dateMiseEnService" : "2021",
+    "kilometrage" : "14 800 Km",
+    "numeroReservation" : "24ZO",
+    "dateDeDebut" : "11/02/2023",
+    "dateDeFin" : "11/03/2024"
+}
+{
+    "marque" : "Fiat 500",
+    "prixJournee" : "55€",
+    "immatriculation" : "BZ-186-RZ",
+    "dateMiseEnService" : "2017",
+    "kilometrage" : "7 300 Km",
+    "numeroReservation" : "43IK",
+    "dateDeDebut" : "06/01/2023",
+    "dateDeFin" : "06/02/2024"
+}
+{
+    "marque" : "Seat Altea",
+    "prixJournee" : "43€",
+    "immatriculation" : "TU-765-PP",
+    "dateMiseEnService" : "2012",
+    "kilometrage" : "12 500 Km",
+    "numeroReservation" : "76BH",
+    "dateDeDebut" : "16/11/2023",
+    "dateDeFin" : "16/11/2024"
+}
+{
+    "marque" : "Volkswagen",
+    "prixJournee" : "52€",
+    "immatriculation" : "KS-542-QS",
+    "dateMiseEnService" : "2011",
+    "kilometrage" : "19 000 Km",
+    "numeroReservation" : "22RF",
+    "dateDeDebut" : "13/02/2023",
+    "dateDeFin" : "13/02/2024"
+}
+{
+    "marque" : "Corvette",
+    "prixJournee" : "70€",
+    "immatriculation" : "QW-753-XZ",
+    "dateMiseEnService" : "2021",
+    "kilometrage" : "9 500 Km",
+    "numeroReservation" : "89PN",
+    "dateDeDebut" : "23/05/2023",
+    "dateDeFin" : "23/05/2024"
+}

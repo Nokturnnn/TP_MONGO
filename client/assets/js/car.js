@@ -1,6 +1,5 @@
 function addCar() 
 {
-  var name = document.querySelector('#name');
   var marque = document.querySelector('#marque');
   var prixJournee = document.querySelector('#prixJournee');
   var immatriculation = document.querySelector('#immatriculation');
@@ -13,7 +12,6 @@ function addCar()
 
   var tmp = 
   {
-    nom: name.value,
     marque: marque.value,
     prixJournee: prixJournee.value,
     immatriculation: immatriculation.value,
@@ -44,19 +42,31 @@ function addCar()
     if(res.ok) 
     {
       addOneLine(tmp);
-      localStorage.setItem('carName', tmp.nom);
+      // Je stocke ma marque / prix en local
+      localStorage.setItem('carName', tmp.marque);
+      localStorage.setItem('carPrice', tmp.prixJournee);
       document.forms['formSpe'].reset(); 
     }
   });
 }
 
-//
-function getAllCarNames(response) {
+// Je fais une fonction pour récupérer toutes les marques
+function getAllCarNames(response) 
+{
   let carNames = [];
   response.forEach(car => {
-    carNames.push(car.nom);
+    carNames.push(car.marque);
   });
   return carNames;
+}
+// Je fais une fonction pour récupérer touts les prix
+function getAllCarPrices(response) 
+{
+  let carPrices = [];
+  response.forEach(car => {
+    carPrices.push(car.prixJournee);
+  });
+  return carPrices;
 }
 //
 
@@ -100,7 +110,7 @@ function addOneLine(data)
   var tdSuppr = document.createElement('td');
   var btnSuppr = document.createElement('button');
   btnSuppr.innerText = 'Delete';
-  btnSuppr.classList.add('btn', 'btn-outline-danger');
+  btnSuppr.classList.add('btn', 'btn-danger');
   tdSuppr.appendChild(btnSuppr);
   newLine.appendChild(tdSuppr);
 
@@ -144,8 +154,14 @@ fetch(url, options)
     {
       addOneLine(elt);
     });
+  // Ici je stocke l'objet dans le local storage
   const allCarNames = getAllCarNames(response);
   if (allCarNames.length > 0) {
     localStorage.setItem('carNames', JSON.stringify(allCarNames));
+  }
+  // Ici je stocke l'objet dans le local storage
+  const allCarPrices = getAllCarPrices(response);
+  if (allCarPrices.length > 0) {
+    localStorage.setItem('carPrices', JSON.stringify(allCarPrices));
   }
 })

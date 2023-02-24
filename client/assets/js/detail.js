@@ -1,4 +1,3 @@
-var name = document.querySelector('#name');
 var marque = document.querySelector('#marque');
 var prixJournee = document.querySelector('#prixJournee');
 var immatriculation = document.querySelector('#immatriculation');
@@ -36,7 +35,6 @@ fetch(urlFinal, options)
   .then((response) => 
   {
     console.log(response)
-    nom.value = response.nom;
     marque.value = response.marque;
     prixJournee.value = response.prixJournee;
     immatriculation.value = response.immatriculation;
@@ -52,7 +50,6 @@ function modify()
 {
   var tmp = 
   {
-    nom: nom.value,
     marque: marque.value,
     prixJournee: prixJournee.value,
     immatriculation: immatriculation.value,

@@ -1,6 +1,5 @@
 function addCar() 
 {
-  var name = document.querySelector('#name');
   var marque = document.querySelector('#marque');
   var prixJournee = document.querySelector('#prixJournee');
   var immatriculation = document.querySelector('#immatriculation');
@@ -13,7 +12,6 @@ function addCar()
 
   var tmp = 
   {
-    nom: name.value,
     marque: marque.value,
     prixJournee: prixJournee.value,
     immatriculation: immatriculation.value,
