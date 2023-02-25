@@ -69,7 +69,8 @@ function addOneLine(data)
 {
   var tab = document.querySelector('#cars');
   var newLine = document.createElement('tr');
-  for (const prop in data) {
+  for (const prop in data) 
+  {
     if(prop != '_id' && prop != '__v') 
     {
       var tmp = document.createElement('td');

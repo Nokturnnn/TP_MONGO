@@ -42,9 +42,10 @@ function addCar()
     if(res.ok) 
     {
       addOneLine(tmp);
-      // Je stocke ma marque / prix en local
+      // Je stocke la marque / prix en local / numéro de réservation
       localStorage.setItem('carName', tmp.marque);
       localStorage.setItem('carPrice', tmp.prixJournee);
+      localStorage.setItem('carNumber', tmp.numeroReservation);
       document.forms['formSpe'].reset(); 
     }
   });
@@ -54,7 +55,8 @@ function addCar()
 function getAllCarNames(response) 
 {
   let carNames = [];
-  response.forEach(car => {
+  response.forEach(car => 
+  {
     carNames.push(car.marque);
   });
   return carNames;
@@ -63,10 +65,21 @@ function getAllCarNames(response)
 function getAllCarPrices(response) 
 {
   let carPrices = [];
-  response.forEach(car => {
+  response.forEach(car => 
+  {
     carPrices.push(car.prixJournee);
   });
   return carPrices;
+}
+// Je fais une fonction pour récupérer touts les n° de réservation correspondant à la voiture
+function getAllCarNumbers(response) 
+{
+  let carNumbers = [];
+  response.forEach(car => 
+  {
+    carNumbers.push(car.numeroReservation);
+  });
+  return carNumbers;
 }
 //
 
@@ -91,7 +104,8 @@ function addOneLine(data)
 {
   var tab = document.querySelector('#cars');
   var newLine = document.createElement('tr');
-  for (const prop in data) {
+  for (const prop in data) 
+  {
     if(prop != '_id' && prop != '__v') 
     {
       var tmp = document.createElement('td');
@@ -156,12 +170,20 @@ fetch(url, options)
     });
   // Ici je stocke l'objet dans le local storage
   const allCarNames = getAllCarNames(response);
-  if (allCarNames.length > 0) {
+  if (allCarNames.length > 0) 
+  {
     localStorage.setItem('carNames', JSON.stringify(allCarNames));
   }
   // Ici je stocke l'objet dans le local storage
   const allCarPrices = getAllCarPrices(response);
-  if (allCarPrices.length > 0) {
+  if (allCarPrices.length > 0) 
+  {
     localStorage.setItem('carPrices', JSON.stringify(allCarPrices));
   }
+    // Ici je stocke l'objet dans le local storage
+    const AllCarNumbers = getAllCarNumbers(response);
+    if (getAllCarNumbers.length > 0) 
+    {
+      localStorage.setItem('carNumbers', JSON.stringify(AllCarNumbers));
+    }
 })

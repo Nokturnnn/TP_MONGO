@@ -80,7 +80,6 @@ function modify()
   {
     if(res.ok) 
     {
-      // Je me redirige vers la liste des car
       window.location.href = '/pages/listscar.html';
     }
   });
