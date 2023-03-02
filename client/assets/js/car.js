@@ -9,7 +9,6 @@ function addCar()
   var dateDeDebut = document.querySelector('#dateDeDebut');
   var dateDeFin = document.querySelector('#dateDeFin');
 
-
   var tmp = 
   {
     marque: marque.value,
